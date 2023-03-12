@@ -11,7 +11,75 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
-  
+  <div class="body_container">
+    <section class="card_section">
+      <div class="card_container">
+        <div class="backface_card">
+          <div class="cvc_num">
+            000
+          </div>
+        </div>
+        <div class="frontface_card">
+          <div class="logo">
+            <img src="images/card-logo.svg" alt="card logo">
+          </div>
+          <div class="card_nun">
+            0000 0000 0000 0000
+          </div>
+          <div class="card_info">
+            <div class="card_owner">
+              JANE APPLESSED
+            </div>
+            <div class="exp_date">
+              00/00
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="form_section">
+      <form action="#" method="get">
+        <div>
+          <label for="cardholder_name">cardholder name</label>
+          <input type="text" name="cardholder_name" id="cardholder_name" placeholder="e.g Jane Applessed" required>
+        </div>
+        <div>
+          <label for="card_number">card number</label>
+          <input type="text" name="card_number" id="card_number" inputmode="numeric" placeholder="e.g. 1234 5678 9123 0000" required>
+        </div>
+        <div>
+          <div class="expiration_date">
+            <label for="exp_date">exp. date (mm/yy)</label>
+            <div class="date">
+              <div class="month">
+                <input type="number" name="exp_month" id="exp_date" placeholder="MM" required>
+              </div>
+              <div class="year">
+                <input type="number" name="exp_year" id="exp_date" placeholder="YY" required>
+              </div>
+            </div>
+          </div>
+          <div class="cvc">
+            <label for="cvc">cvc</label>
+            <input type="number" name="cvc" id="cvc" placeholder="e.g. 123" required>
+          </div>
+        </div>
+        <div>
+          <button type="submit">Confirm</button>
+        </div>
+      </form>
+    </section>
+    <section class="confirmed_section">
+      <div>
+        <img src="images/icon-complete.svg" alt="icon complete">
+      </div>
+       <div>thank you!</div>
+      <div>We've added your card details</div>
+      <div>
+        <button type="submit">Continue</button>
+      </div>
+    </section>
+  </div> 
   
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
