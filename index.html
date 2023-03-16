@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="CSS/style.css">
   <title>Frontend Mentor | Interactive card details form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,30 +15,38 @@
     <section class="card_section">
       <div class="card_container">
         <div class="backface_card">
+          <div class="card_image">
+            <img src="images/bg-card-back.png" alt="back face of a credit card">
+          </div>
           <div class="cvc_num">
             000
           </div>
         </div>
         <div class="frontface_card">
-          <div class="logo">
-            <img src="images/card-logo.svg" alt="card logo">
-          </div>
-          <div class="card_nun">
-            0000 0000 0000 0000
-          </div>
-          <div class="card_info">
-            <div class="card_owner">
-              JANE APPLESSED
+          <img src="images/bg-card-front.png" alt="front face of a credit card">
+          <div class="frontface_info">
+            <div class="logo">
+              <img src="images/card-logo.svg" alt="card logo">
             </div>
-            <div class="exp_date">
-              00/00
+            <div class="card_data">
+              <div class="card_num">
+                0000 0000 0000 0000
+              </div>
+              <div class="card_info">
+                <div class="card_owner">
+                  JANE APPLESSED
+                </div>
+                <div class="exp_date">
+                  00/00
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="form_section">
-      <form action="#" method="get">
+      <form action="#" method="post">
         <div>
           <label for="cardholder_name">cardholder name</label>
           <input type="text" name="cardholder_name" id="cardholder_name" placeholder="e.g Jane Applessed" required>

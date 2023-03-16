@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+img {
+    max-width: 100%;
+}
+input, input::placeholder, button {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+input {
+    width: 100%;
+    padding-block: .5rem;
+    padding-left: 1rem;
+    border: 1px solid var(--light-grayish-violet);
+    border-radius: 8px;
+    color: var(--very-dark-violet);
+    margin-top: .5em;
+    cursor: pointer;
+}
+input::placeholder {
+    color:var(--dark-grayish-violet);
+}
+input:focus {
+    outline: 1px solid var(--very-dark-violet);
+}
+input[type="number"] {
+    appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+label, .card_owner {
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+label {
+    font-size:.88rem;
+    color: var(--very-dark-violet);
+}
+button {
+    background-color: var(--very-dark-violet);
+    color:var(--white);
+    border:none;
+    width: 100%;
+    padding-block: .7em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card_section {
+    background-image: url("../images/bg-main-mobile.png");
+    background-size: cover;
+    margin-bottom: 5em;
+}
+.card_container {
+    padding-block: 2em 2.3em;
+    position: relative;
+}
+.backface_card {
+    position: relative;
+    width: min(447px, 75%);
+    margin-left: 4em;
+}
+.cvc_num {
+    position: absolute;
+    top:43.6%;
+    right:13%;
+    font-size: clamp(.78rem,.06rem + 3vw,1rem);
+    color: var(--light-grayish-violet);
+    letter-spacing: 1px;
+}
+.frontface_card {
+    position: absolute;
+    width: min(447px, 75%);
+    margin-left:1em;
+    top:52.2%;
+}
+.frontface_info {
+    position: absolute;
+    top:0;
+    padding: 1rem 1.4rem 1.4rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo img {
+    width: clamp(50px,35px + 3.6vw,84px);
+}
+.card_num {
+    margin-bottom: .9em;
+    letter-spacing: 1.6px;
+    color: var(--white);
+}
+.card_info {
+    font-size:.7rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--light-grayish-violet);
+}
+
+.form_section, .confirmed_section {
+    width:87%;
+    margin:0 auto;
+    max-width: 425.417px;
+}
+.form_section > form > div {
+    margin-bottom:1em;
+}
+.form_section > form > div:nth-child(3) {
+    display: flex;
+    gap: .6em; 
+}
+.expiration_date {
+    flex: 1;
+}
+.cvc {
+    flex: 1; 
+}
+.date {
+    display: flex;
+    gap: .5em;
+}
+.form_section > form button {
+    margin-top:.7em;
+}
+
+
+.confirmed_section {
+    display: none;
+}
+.confirmed_section > div:first-child {
+    align-content: center;
+    display: grid;
+    justify-content: center;
+}
+.confirmed_section > div:nth-child(2) {
+    text-transform: uppercase;
+    color: var(--very-dark-violet);
+    letter-spacing: 1.5px;
+    font-size: 2rem;
+    text-align: center;
+    margin-block: 1em .5em;
+}
+.confirmed_section > div:nth-child(3) {
+    text-align: center;
+    color: var(--dark-grayish-violet);
+}
+.confirmed_section > div:last-child {
+    margin-top: 3em;
+}
+
+
