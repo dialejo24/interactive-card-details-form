@@ -70,6 +70,9 @@ button {
 button:hover {
     opacity:.8;
 }
+button:focus {
+    outline: 2px solid rebeccapurple;
+}
 
 .card_section {
     background-image: url("../images/bg-main-mobile.png");
@@ -175,6 +178,41 @@ button:hover {
 .confirmed_section > div:last-child {
     margin-top: 3em;
 }
+
+
+
+/* form submission */
+.error_msg {
+    position: relative;
+    display: block;
+}
+.empty_msg::after {
+    content:"Can't be blank";  
+}
+.invalid_format_msg::after {
+    content:"Wrong format!";
+}
+.invalid_card_num::after {
+    content:"Wrong format!, numbers only";
+}
+.invalid_card_num::after,
+.empty_msg::after,
+.invalid_format_msg::after {
+    font-size: .8rem;
+    color:red;
+    position:absolute;
+}
+.invalid_input {
+    outline: 1px solid red !important;
+}
+.showConfirm {
+    display: block;
+}
+.hideForm {
+    display: none;
+}
+
+
 
 @media (min-width: 500px) and (max-width: 899px) {
     .card_section {
